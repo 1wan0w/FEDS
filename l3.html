@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <title>Lesson No.3</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -10,7 +10,76 @@
         <img src="image/logo.gif" alt="logo">
     </header>
 
- 
+    <form action="#" method="post" enctype="multipart/form-data">
+    <!--action - атрибут, содержащий адрес сервера, получающего данные формы--> 
+    <!--method - атрибут, определяющий способ передачи данных: get - передача в ссылке, post - передача отдельным файлом-->
+    <div>
+        <input disabled placeholder="Input your name" type="text" name="user_name" value="test" />
+    </div>
+    <!--input - строчный тег, принимающий вводимые данные-->
+    <!--disabled - атрибут, отключающий элемент формы-->
+    <!--placeholder - атрибут, добавляющий подпись поля ввода-->
+    <!--type - атрибут, определяющий тип вводимых данных: text - текст, tel - телефон и т.п.-->
+    <!--выбранный тип данных будет вызывать соответствующую клавиатуру на мобильному устройстве-->
+    <!--name - атрибут, определяющий имя поля ввода-->
+    <!--value - атрбиут, принимающий введенное в поле значение-->
+
+    <div>
+        <input placeholder="Input your password" type="password" name="user_pass" value="" />
+    </div>
+
+    <div>
+        <p><input checked type="radio" name="radiobutton" value="ga_ga" /> Radio Ga Ga </p>
+        <!--checked - атрибут, определяющий выбор по умолчанию-->
+        <p><input type="radio" name="radiobutton" value="goo_goo" /> Radio Goo Goo </p>
+    </div>
+    <br />
+    <div>
+        <p><input type="radio" name="radiobutton2" value="blah_blah" /> Radio blah, blah </p>
+        <p><input checked type="radio" name="radiobutton2" value="what_s_new" /> Radio, what's new </p>
+    </div>
+    <br />
+    <div>
+        <p><input checked type="checkbox" name="warranty" value="yes" /> + a one-year warranty </p>
+        <p><input type="checkbox" name="warranty5" value="yes" /> + a five-year warranty </p>
+        <p><input type="checkbox" name="full_warranty" value="yes" /> + a full warranty </p>
+    </div>
+    <br />
+    <div>
+        <p><input type="file" name="photo" /></p>
+    </div>
+    <br />
+    <div>
+        <textarea placeholder="Comment" name="text" cols="5" rows="5"></textarea>  <!--textarea - тег, создающий текстовое поле-->
+        <!--cols/rows - атрибуты, определяющие размеры поля, но редко используемые на практике; 
+        вместо них последующие размеры поля задаются js/css файлами-->
+    </div>
+    <br />
+    <div>
+        <select name="color">  <!--select - тег, создающий выпадающий список-->
+            <option value="red">Red</option>  <!--option - тег-элемент выпадающего списка-->
+            <option value="yellow">Yellow</option>
+            <option selected value="green">Green</option>
+        </select>
+    </div>
+    <br />
+    <div>
+        <select multiple name="chords">  <!--multiple - атрибут, позволяющий выбирать несколько элементов сразу-->
+            <option value="am">Am</option>
+            <option value="dm">Dm</option>
+            <option value="c">C</option>
+        </select>
+    </div>
+    <br />
+    <div>
+    <button type="reset">Reset</button>
+    </div>
+    <br />
+    <div>
+    <button type="submit">Submit</button>  <!--button - тег, создающий кнопку-->
+    <!--submit - отправка всех значений формы; reset - сброс всех значений-->
+    </div>
+</form>
 </body>
 
 </html>
