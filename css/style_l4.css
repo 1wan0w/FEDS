@@ -1,0 +1,30 @@
+.bigblue{
+    font-size: 20px;
+    color: blue;
+}
+
+.bigred{
+    font-size: x-large;
+    color: firebrick;
+}
+
+.smallgreen{
+    font-size: small;
+    color: green;
+}
+
+span.bigblue{  /*характеристики будут распространяться только на теги span с соответствующим классом*/
+    /*селектор с указаным тегом является приоритетнее*/
+    font-size: xx-large;
+    color: deepskyblue;
+}
+
+.bigred span{  /*характеристики будут распространяться только на теги span внутри этого класса*/
+    font-size: 30px;
+    color: orangered;
+}
+
+.purplerain>p{  /*характеристики будут распространяться только на теги первой вложенности*/
+    font-size: x-large;
+    color: purple;
+}
