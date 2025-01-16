@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/**/
+
+.block-l_el span, .block-l_el_2 span{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.el_3 span, .el_4 span, .el_5 span, .el_6 span, .el_7 span, .el_8 span, .el_10 span, .el_11 span, .el_12 span, .el_13{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.block-l_el{
+    padding: 10px 20px 30px 5px;  /*padding - внутренний отступ блочных тегов*/
+    /*
+    структура при Х значениях свойства:
+    4: отступ сверху, отступ справа, отступ снизу, отступ справа
+    3: отступ сверху, отступы справа и слева, отступ снизу
+    2: отступы сверху и снизу, отступы справа и слева
+    1: единые отступ со всех сторон
+
+    по такому же принципу задается в процентном соотношении к размеру окна браузера
+    */
+    border: 2px solid #FA8072;
+}
+
+.block-l_el_2{
+    margin: 10% -10%;  /*margin - вннешний отступ блочных тегов*/
+    border: 2px solid #000000;
+}
+
+.inline_el{
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #0ae1be;
+}
+
+.el_3{
+    width: 250px;  /*width - ширина блочных тегов*/
+    /*принимает статичное значение и не изменяется при смене размера окна*/
+    border: 2px solid #777777;
+}
+
+.el_4{
+    max-width: 350px;  /*max-width - максимальная ширина блочных тегов*/
+    /*динамичное свойство, изменяется при смене размера экрана в меньшую сторону*/
+    border: 2px solid #50b90f;
+}
+
+.el_5{
+    min-width: 600px;  /*min-width - минимальная ширина блочных тегов*/
+    border: 2px solid #ec51d5;
+    /*динамичное свойство, изменяется при смене размера экрана в большую сторону*/
+}
+
+.static_image{
+    height: 400px;
+    width: 500px;
+    border: 2px solid #0f8cb9;
+    margin-bottom: 10px;
+}
+
+.flex_image{
+    width: 100%;
+    max-width: 700px;
+    min-width: 600px;
+    border: 2px solid #e1ec0c;
+}
+
+.el_6{
+    height: 150px;  /*height - высота блочных тегов*/
+    /*при процентном значении текст занимает заданое кол-во размера всего поля*/
+    border: 2px solid #660ec4;
+}
+
+.el_7{
+    max-height: 100px;  /*max-height - максимальная высота блочных тегов*/
+    /*при превышении кол-ва содержимое будет выходить за границы элемента*/
+    border: 2px solid #cf0606;
+}
+
+.el_8{
+    min-height: 100px;  /*min-height - минимальная высота блочных тегов*/
+    /*при увеличении кол-ва содержимого блок адаптируется*/
+    border: 2px solid #0d2e76;
+}
+
+.el_9{
+    width: 400px;
+    padding: 20px;
+    margin: 0px 30px;
+    border: 2px solid #000000;
+/*
+При использовании параметра "box-sizing: border-box", в заданные размеры ширины будут включены внутренние отступы и границы;
+при отключении данного параметра, к заданной ширине будут прибавляться все остальные заданные размеры
+*/
+}
+
+.el_10{
+    overflow: scroll;  /*overflow - отображение содержимого блочного тега*/
+    /*принимает следующие значение с их влиянием:
+    visible - содержимое за пределами блока отображается
+    hidden - содержимое за пределами блока скрывается
+    scroll - содержимое листается внутри границ блока
+    auto - подключает scroll в случае выхода содержимого за границы
+    */
+    max-height: 50px;
+    border: 2px solid #09a6f4;
+}
+
+.el_11{
+    display: block;  /*display - многоцелевое свойство, определяющее отображение элемента*/
+    /*в данном случае, свойство задает хар-ки блочного элемента для строчного тега*/
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #0ae1be;
+}
+
+.el_12{
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #e14040;
+}
+
+.el_13{
+    display: inline-block;
+    padding: 20px;
+    width: 450px;
+    border: 2px solid #56f401;
+    margin-bottom: 20px;
+}
+
+.disappearing_image{
+    display: none;
+}
