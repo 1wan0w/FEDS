@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/**/
+
+.block_el{
+    border: 5px solid #000000;
+    border-right: none;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.inline_el{
+    outline: 5px solid #dacc0b;  /*outline - внешняя граница блока*/
+    font-size: 25px;
+}
+
+.block_el_2{
+    outline: 5px solid #777111;  /*outline - внешняя граница блока*/
+    /*!не поддерживает border-radius и border для отдельных сторон*/
+    margin: 20px 10px;
+}
+
+.image_el{
+    border: 5px dashed #000000;
+    border-radius: 50px 0 50px 0;  /*border-radius - радиус скругления углов блока*/
+    /*структура при Х значениях свойства:
+    4: отступ сверху, отступ справа, отступ снизу, отступ слева
+    3: отступ сверху, отступы справа и слева, отступ снизу
+    2: отступы сверху и снизу, отступы справа и слева
+    1: единые отступ со всех сторон*/
+    box-shadow: 5px 5px 10px 10px #000000, inset 5px 5px 10px 10px #818185;  /*box-shadow - тень от блока*/
+    /*структура значения: смещение бека по горизонтали, вертикали, насыщенность, цвет*/
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.image_el_2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px dotted #ec53d5;
+    margin-right: 50px;
+}
+
+.image_el_3{
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    /*opacity: 70%;  opacity - уровень видимости элемента*/
+    /*!отличие opacity от display: none - opacity занимает место на странице и с ним возможно взаимодействовать, в том числе анимировать*/
+    animation: AAA 3s infinite;
+}
+
+@keyframes AAA{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 0%
+    }
+}
+
+.image_el_4{
+    margin-right: 50px;
+    height: 250px;
+    border: 2px dotted #1e1bf5;
+    visibility: hidden;  /*visibility - отображение/скрытие элемента*/
+    /*!отличие visibility от opacity/display:none - элемент занимает место на странице, но нефункционален*/
+}
