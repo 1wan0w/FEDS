@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/**/
+
+/*background - управление фоном элемента: установить цвет/изображение фона, установить начальную позицию, установить повтор изображения фона, 
+задать метод scroll для фонового изображения, масштабировать фоновое изображение, градиентная заливка фона */
+
+body{
+    padding: 30px;
+    background: url(../image/back.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.block_el{
+    background-color: #36afba;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.block_el_2{
+    margin: 20px;
+    background: url(../image/sad_emoji.png);
+    /*под свойство background можно записать сразу несколько значений:
+        background: url(image_url) no-repeat center;*/
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;  /*no-repeat/round/space/x/y*/
+    background-size: 280px 280px;
+    height: 300px;
+    border-radius: 55%;
+    box-shadow:0px 0px 10px #000000;
+}
+
+.block_el_3{
+    margin: 20px;
+    background: -webkit-linear-gradient(top, #000000 0%, #342434 50%, #888454 100%);
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inblock_el_3{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.block_el_4{
+    background: url(../image/starwars.jpg) no-repeat;
+    border-radius: 20px;
+    height: 200px;
+    margin: 10px;
+    background-size: contain;  /*contain - масштабирование по меньшей стороне, cover - масштабирование по большей стороне*/
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.block_el_5{
+    /*в background можно вкладывать несколько изображений: ссылки записываються через запятую, 
+    свойства параметров указываются в соответсвующем порядке для каждого из изображений */
+    background-image: url(../image/emojie1.png), url(../image/emojie2.png), url(../image/hell.jpg);
+    background-repeat: no-repeat;
+    background-position: left, right, center;
+    background-size: 250px, 250px, cover;
+    border-radius: 10px;
+    height: 300px;
+    margin: 10px;
+}
+
+.list{
+    margin: 20px;
+    text-align: center;
+}
+
+.list li{
+    background: url(../image/robot.jpeg) no-repeat center;
+    height: 200px;
+    width: 200px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-top: 80px;
+    border: 2px solid #000000;
+    color: darkgreen;
+}
