@@ -1,0 +1,125 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/**/
+
+body{
+    padding: 125px 290px 105px 290px;
+    background-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #273d46;
+    line-height: 28px;
+}
+
+ul>*{
+    font-size: 20px;
+    line-height: 36px;
+}
+
+li::before{
+    content: url(../image/check.png);
+    margin-right: 5px;
+}
+
+li:nth-child(1){
+    text-decoration: line-through;
+}
+
+li:nth-child(2){
+    font-weight: 700;
+}
+
+li:nth-child(3){
+    font-style: italic;
+}
+
+li:nth-child(4){
+    text-transform: uppercase;
+}
+
+li:hover::before{
+    content: url(../image/red_check.png);
+}
+
+li:hover{
+    color: red;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+
+.button{
+    background-color: rgba(128,183,179,0.54);
+    box-shadow: 0px 6px 20px rgba(128,183,179,0.54);
+    margin: 140px 0px 111px 0px;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.button:hover::after{
+    content: "→";
+}
+
+.button:hover{
+    background-color: #3a5856;
+    box-shadow: 0px 6px 20px rgba(128,183,179,0.54);
+}
+
+.button:active{
+    background-color: #818181;
+    box-shadow: none;
+}
+
+.text_1{
+    margin-bottom: 50px;
+}
+
+.text_1::first-line{
+    font-size: 18px;
+    color: #ff0000;
+}
+
+
+.text_2::first-letter{
+    font-size: 25px;
+    color: #ff0000;
+}
