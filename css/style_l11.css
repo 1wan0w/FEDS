@@ -1,0 +1,170 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/**/
+
+body{
+    padding: 50px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e8e8;
+}
+
+.block_el{
+    position: relative;
+    border: 5px solid rgb(68, 7, 92);
+    max-width: 600px;
+    height: 2000px;
+    margin: 0px auto;  /* Свойство margin с заданныыми параметрами отцентровует блок относительно страницы */
+}
+
+.block_el div{
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.block_1{
+    background-color: firebrick;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+}
+
+.block_2{
+    background-color: darkkhaki;
+    position: relative;
+    /*
+    position - свойство, позволяющее задать необходимое положение блоку
+    relative - значение, позволяющее реализовать конкретное положение при помощи свойств top/right/bottom/left
+    */
+    left: 25px;
+    top: 25px;
+    z-index: 2;  /* z-index - свойство, определяющее порядок накладывания блоков друг на друга; блок с большим значением будет поверх других */
+}
+
+.block_3{
+    background-color: darkolivegreen;
+    position: absolute;  
+    /*
+    absolute - значение, исключающее блок из общего потока документа и позиционирующее относительно спозиционированного 
+    родителя/body; данный блок больше не влияет на размеры и положение других элементов и размещается независимо от них 
+    */
+    bottom: 0;
+    width: 100%;
+}
+
+.block_4{
+    background-color: dodgerblue;
+    position: sticky;
+    /*
+    sticky - значение, фиксирующее блок к границе страницы после скрола;
+    sticky-блоки отображаются эстафетой: последующий блок закрепляется и заменяет предидущий
+    */
+    top: 50px;
+}
+
+.block_5{
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.block_6{
+    background-image: url(../image/header.png);
+    background-size: cover;
+    position: fixed;  /* fixed - значение, исключающее блок из общего потока документа и фиксирующий его в заданном положении относительно body */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+}
+
+.block_7{
+    background-color: palevioletred;
+    position: sticky;
+    top: 50px;
+}
+
+/* absolute следует использовать осознанно, т.к. он вычленяется из общего кода и может нарушить целостную картину */
+.text_1{
+    position: absolute;
+    width: 50%;
+    top: 300px;
+    left: 0;
+    background-color: lightsalmon;
+}
+
+.text_2{
+    position: absolute;
+    width: 50%;
+    top: 300px;
+    right: 0;
+    background-color: lightskyblue;
+}
+
+.text_3{
+    position: relative;
+    top: 100px;
+    background-color: brown;
+}
+
+ul{
+    margin-top: 30px;
+}
+
+li{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+li::before{
+    content: "";
+    background: url(../image/check.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}

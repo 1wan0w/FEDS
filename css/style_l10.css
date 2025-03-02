@@ -71,6 +71,7 @@ li::before{  /*before - псевдоэлемент, что добавляет у
     background-color: rgb(218, 156, 80);
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 2.5px;
 }
 
 li::after{  /*after - псевдоэлемент, что добавляет указанный контент после содержимым элемента-носителля класса*/

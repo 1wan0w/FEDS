@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.link_2, .link {
+  border-bottom: 5px dashed blue;
+  font-size: 50px;
+}
+
+.link::after, .link::before {
+  font-size: 30px;
+  position: relative;
+  left: 0px;
+  bottom: 5px;
+}
+
+.block_el {
+  padding: 30px;
+  line-height: 40px;
+  font-size: 30px;
+}
+.block_el p {
+  color: mediumpurple;
+}
+.block_el > span {
+  color: greenyellow;
+}
+.block_el .inner_block {
+  width: 50%;
+  background-color: burlywood;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.block_el .inner_block span {
+  display: block;
+}
+.block_el .inner_block p {
+  display: inline;
+  color: cornflowerblue;
+  text-decoration: overline;
+}
+
+.link {
+  color: firebrick;
+}
+.link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.link::before {
+  content: "->";
+  color: firebrick;
+}
+.link::after {
+  content: "<-";
+  color: firebrick;
+}
+.link:hover::before, .link:hover::after {
+  color: red;
+}
+.block_el .link {
+  color: orchid;
+  display: block;
+  width: 560px;
+}
+
+.link_2 {
+  font-style: italic;
+  display: block;
+  width: 580px;
+}
+
+.span_1 {
+  font-size: 30px;
+  color: red;
+  text-decoration: underline;
+}
+
+.span_2 {
+  font-size: 60px;
+  color: yellow;
+  text-decoration: line-through;
+}
+
+.span_3 {
+  font-size: 90px;
+  color: green;
+  text-decoration: overline;
+}
+
+.p_4 {
+  margin-top: 20px;
+  font-size: 50px;
+  color: pink;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}

@@ -1,0 +1,96 @@
+@import "_reset.scss";
+
+$link_color: firebrick;  // $ - переменная, принимающее значение и которую после можно использовать повторно
+%links_char{  // % - оператор шаблона, подключаемый через @extend; % = .
+    border-bottom: 5px dashed blue;
+    font-size: 50px;
+}
+%arrow_char{
+    font-size: 30px;
+    position: relative;
+    left: 0px;
+    bottom: 5px;
+}
+@mixin span_char($s,$c,$d){
+    font-size: $s;
+    color: $c;
+    text-decoration: $d;
+}
+
+.block_el{
+    padding: 30px;
+    line-height: 40px;
+    font-size: 30px;
+    p{
+        color: mediumpurple;
+    }
+    >span{  // > - оператор, применяющий заданные хар-ки к span первой вложенности
+        color: greenyellow;
+    }
+    .inner_block{
+        width: 700px / 1400px * 100%;
+        background-color: burlywood;
+        font-size: 20px;
+        margin-bottom: 100px;
+        span{
+            display: block;
+        }
+        p{
+            display: inline;
+            color: cornflowerblue;
+            text-decoration: overline;
+        }
+    }
+}
+
+.link{
+    @extend %links_char;
+    color: $link_color;
+    &:hover{  // & - оператор, заменяющий родительский класс(.link)
+        color: red;
+        text-decoration: underline;
+    }
+    &::before{
+        content: "->";
+        color: $link_color;
+        @extend %arrow_char;
+    }
+    &::after{
+        content: "<-";
+        color: $link_color;
+        @extend %arrow_char;
+    }
+    &:hover::before,
+    &:hover::after{
+        color: red;
+    }
+    .block_el &{  // обращаемся к родительскому классу внутри указанного элемента
+        color: orchid;
+        display: block;
+        width: 560px;
+    }
+}
+
+.link_2{
+    @extend %links_char;
+    font-style: italic;
+    display: block;
+    width: 580px;
+}
+
+.span_1{
+    @include span_char(30px, red, underline)
+}
+
+.span_2{
+    @include span_char(60px, yellow, line-through)
+}
+
+.span_3{
+    @include span_char(90px, green, overline)
+}
+
+.p_4{
+    margin-top: 20px;
+    @include span_char(50px, pink, 0)
+}

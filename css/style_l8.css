@@ -50,12 +50,12 @@ body{
     background-color: #36afba;
     height: 300px;
     border-radius: 15px;
-    margin: 20px;
+    margin-bottom: 20px;
     box-shadow: 0px 0px 10px #000000;
 }
 
 .block_el_2{
-    margin: 20px;
+    margin-bottom: 20px;
     background: url(../image/sad_emoji.png);
     /*под свойство background можно записать сразу несколько значений:
         background: url(image_url) no-repeat center;*/
@@ -69,7 +69,7 @@ body{
 }
 
 .block_el_3{
-    margin: 20px;
+    margin-bottom: 20px;
     background: -webkit-linear-gradient(top, #000000 0%, #342434 50%, #888454 100%);
     height: 300px;
     border-radius: 30px;
