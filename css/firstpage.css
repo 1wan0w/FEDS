@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.img_buttons img, .burger img, .logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: #efefef;
+  background-image: url(../image/man_back.png), url(../image/circle_back.png);
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: 350px, 620px;
+}
+
+.nav {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.logo {
+  background-color: transparent;
+  height: 50px;
+  width: 135px;
+  margin-right: auto;
+  left: 0;
+}
+.menu button {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 400;
+  color: #272727;
+  line-height: 53px;
+  text-transform: uppercase;
+  margin: 0 25px;
+  background-color: transparent;
+}
+
+.burger {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  right: 0;
+  margin-left: auto;
+  background-color: transparent;
+}
+.main_text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  color: #222222;
+  margin-left: 75px;
+  margin-top: 150px;
+  width: 270px;
+}
+
+.text_link {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222222;
+  display: inline-block;
+  text-transform: capitalize;
+  margin-left: 75px;
+  margin-top: 15px;
+}
+
+.slogan {
+  font-family: Montserrat;
+  font-size: 90px;
+  font-weight: 600;
+  color: #222222;
+  position: relative;
+  left: 860px;
+  max-width: 500px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.img_buttons {
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: 40px;
+  margin-right: 10px;
+}
+.company {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  position: relative;
+  bottom: 30px;
+  left: 1040px;
+}

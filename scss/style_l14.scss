@@ -1,0 +1,79 @@
+@import "_reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+%txt_char{
+    color: #868585;
+    text-align: center;
+    font-family: "Lato";
+    line-height: 26px;
+}
+
+.about {
+    &__body {
+        max-width: 840px;
+        margin: 0px auto;
+    }
+    &__header {
+        margin-bottom: 75px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__line {
+        display: grid;
+        place-items: center;
+        height: 1px;
+        & img {
+        width: 85px;
+        height: 100%;
+        }
+        margin-bottom: 30px;
+    }
+    &__text {
+        @extend %txt_char;
+        width: 680px;
+        height: 66px;
+        font-weight: 300;
+        margin: 0px auto;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__column {
+        flex: 0 0 30%;
+    }
+}
+.title {
+    font-family: "Lato";
+    font-size: 34px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+.item-about {
+    &__icon {
+        margin: 0px auto;
+        width: 92px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid #dbe7f9;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 20px;
+        letter-spacing: 4px;
+        color: #000000;
+        text-transform: uppercase;
+        @extend %txt_char;
+        margin-bottom: 20px;
+    }
+    &__text {
+        @extend %txt_char;
+    }
+}

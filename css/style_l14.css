@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.item-about__text, .item-about__title, .about__text {
+  color: #868585;
+  text-align: center;
+  font-family: "Lato";
+  line-height: 26px;
+}
+
+.about__body {
+  max-width: 840px;
+  margin: 0px auto;
+}
+.about__header {
+  margin-bottom: 75px;
+}
+.about__title {
+  margin-bottom: 30px;
+}
+.about__line {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 1px;
+  margin-bottom: 30px;
+}
+.about__line img {
+  width: 85px;
+  height: 100%;
+}
+.about__text {
+  width: 680px;
+  height: 66px;
+  font-weight: 300;
+  margin: 0px auto;
+}
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.about__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.title {
+  font-family: "Lato";
+  font-size: 34px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+
+.item-about__icon {
+  margin: 0px auto;
+  width: 92px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #dbe7f9;
+  margin-bottom: 30px;
+}
+.item-about__title {
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
