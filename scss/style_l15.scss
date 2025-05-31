@@ -1,0 +1,42 @@
+@import "_reset.scss";
+@mixin txt_char($s,$w,$t,$d){
+    font-size: $s;
+    font-weight: $w;
+    font-style: $t;
+    text-decoration: $d;
+}
+
+.text-1{
+    @include txt_char(35px, 600, italic, none);
+}
+
+.text-2{
+    @include txt_char(25px, 400, normal, underline);
+}
+
+.timer{
+    @include txt_char(20px, 600, italic, underline);
+    color: rgb(206, 0, 38);
+    margin: 15px 0;
+    &_count{
+        &::before{
+            content: "3";
+            animation: timer 3s steps(3) forwards;
+        }
+    }
+}
+
+@keyframes timer {
+    0%{
+        content: "3";
+    }
+    33%{
+        content: "2";
+    }
+    66%{
+        content: "1";
+    }
+    100%{
+        content: "0";
+    }
+}

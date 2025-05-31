@@ -1,0 +1,59 @@
+@import "_reset.scss";
+
+.wrapper{
+    height: 100%;
+    overflow: hidden;
+    min-height: 100%;
+    padding: 50px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.block__row{  //flex-container
+    flex-direction: column-reverse;  // определяет основную ось
+    // row/row-reverse/column/column-reverse
+    display: flex;  // включает flex-разметку; inline-flex сделает элемент строчным
+    // justify-content: space-evenly;  //определяет положение элементов по горизонтали
+    // flex-start(слева)/center/end(справа); space-between(между эл-ми)/around(вокруг эл-ов)/evenly; задают пространство, НЕ отступы
+    align-items: stretch;  //определяет положение элементов по вертикали
+    // stretch(адаптируются под высоту большего эл-та); flex-start(верх)/center/end(низ); baseline
+    border: 20px solid #ece89d;
+    flex-wrap: nowrap;  //фиксирует элементы внутри контейнера
+    // wrap(эл-ты размещаются внутри контейнера); nowrap(эл-ты выходят за границы контейнера)
+    // wrap-reverse(эл-ты размещаются внутри контейнера в обратном порядке)
+    margin-bottom: 60px;
+    height: 750px;
+}
+
+.block__column{  //flex-element
+    border: 20px solid #5e5373;
+    // flex-basis: 400px;  // определяет базовый размер; auto(согласно контенту)/30%/250px
+    flex-grow: 0;  // возможность увеличиваться относительно базового размера; 0(400px max)/1(розтянутся)
+    flex-shrink: 1;  // возможность уменьшаться отноосительнно базового размера;
+    // короткий вариант: flex: 0 1 auto;(grow, shrink, basis)
+}
+
+.block__column_1{
+    align-self: stretch;  // аналогично align-items, но применяются напрямую к элементу
+    order: 3;  // задает порядок отображения элементов
+}
+
+.block__column_2{
+    order: 2;
+    flex: 1 1 auto;
+}
+
+.block__column_3{
+    align-self: stretch;
+    order: 1;
+}
+
+.block__item{  //flex-content
+    background-color: #18b5a4;
+    padding: 50px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}

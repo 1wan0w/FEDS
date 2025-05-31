@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .block-l_el_2{
-    margin: 10% -10%;  /*margin - вннешний отступ блочных тегов*/
+    margin: 10% -10%;  /*margin - внешний отступ блочных тегов*/
     border: 2px solid #000000;
 }
 
